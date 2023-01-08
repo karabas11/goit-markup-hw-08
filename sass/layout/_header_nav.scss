@@ -3,10 +3,11 @@ header {
   outline: 1px solid var(--border-color);
 }
 
-// .nav-main {
-//   display: flex;
-//   align-items: center;
-// }
+.nav-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .nav-list {
   display: none;
