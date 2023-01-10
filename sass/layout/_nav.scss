@@ -1,15 +1,16 @@
-header {
-  background-color: var(--color-white);
-  border-bottom: 1px solid var(--border-color);
-
-
- 
-
-  .nav-main {
+.nav-main {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 60px;
+}
+
+  .mobile-menu__button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
   }
 
   .nav-list {
@@ -20,12 +21,16 @@ header {
     display: none;
   }
   @media screen and (min-width: 480px) {
-    width: 480px;
+
 
   }
 
+  .mobile-menu__button .mobile-menu__icon-x {
+    display: none;
+  }
+
   @media screen and (min-width: 768px) {
-  width: 768px;
+
     .nav-list {
     display: flex;
     margin-left: 93px;
@@ -33,9 +38,9 @@ header {
   }
 
   @media screen and (min-width: 1200px) {
-  width: 1200px;
+
   }
-}   
+
 
 
 
