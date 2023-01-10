@@ -669,10 +669,9 @@ textarea {
 
 header {
   background-color: var(--color-white);
-  outline: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
-
-.nav-main {
+header .nav-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -682,19 +681,39 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 60px;
 }
-
-.nav-list {
+header .nav-list {
   display: none;
+}
+header .nav-contacts {
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  header {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    width: 768px;
+  }
+  header .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 93px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    width: 1200px;
+  }
 }
 
 /* .nav-list .item:not(:last-child) {
     margin-right: 50px;
 } */
-.nav-contacts {
-  display: none;
-}
-
 /* .address-nav .item {
   align-items: center;
 } */
