@@ -5,6 +5,14 @@
     height: 60px;
 }
 
+  .nav-list {
+    display: none;
+  }
+
+  .nav-contacts {
+    display: none;
+  }
+
   .mobile-menu__button {
     display: inline-flex;
     margin: 0;
@@ -13,20 +21,23 @@
     background-color: transparent;
   }
 
-  .nav-list {
+  .mobile-menu__button .mobile-menu__icon-x {
     display: none;
   }
 
-  .nav-contacts {
+  .mobile-menu__button.is-open .mobile-menu__icon-x {
+    display: block;
+  }
+
+  .mobile-menu__button.is-open .mobile-menu__icon--menu {
     display: none;
   }
+
+
+
   @media screen and (min-width: 480px) {
 
 
-  }
-
-  .mobile-menu__button .mobile-menu__icon-x {
-    display: none;
   }
 
   @media screen and (min-width: 768px) {

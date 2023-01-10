@@ -685,6 +685,14 @@ header {
   height: 60px;
 }
 
+.nav-list {
+  display: none;
+}
+
+.nav-contacts {
+  display: none;
+}
+
 .mobile-menu__button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -695,15 +703,15 @@ header {
   background-color: transparent;
 }
 
-.nav-list {
-  display: none;
-}
-
-.nav-contacts {
-  display: none;
-}
-
 .mobile-menu__button .mobile-menu__icon-x {
+  display: none;
+}
+
+.mobile-menu__button.is-open .mobile-menu__icon-x {
+  display: block;
+}
+
+.mobile-menu__button.is-open .mobile-menu__icon--menu {
   display: none;
 }
 
