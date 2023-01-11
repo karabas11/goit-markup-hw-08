@@ -56,12 +56,12 @@
           </li>
         </ul>
         <button type="button" class="mobile-menu__button js-menu-container">
-          <svg width="40" height="40" aria-expanded="false" aria-label="Перемикач мобільного меню">
+          <svg width="40" height="40" aria-expanded="false" aria-label="Перемикач мобільного меню" aria-controls="mobile-menu__container">
             <use class="mobile-menu__icon--menu js-open-menu" href="./img/sprite.svg#mobile-menu"></use>
             <use class="mobile-menu__icon-x js-close-menu" href="./img/sprite.svg#mobile-x"></use>
           </svg>
         </button>
-        <div class="mobile-menu__container js-menu-container">Контент меню</div>
+        <div class="mobile-menu__container" id="mobile-menu__container">Контент меню</div>
       </div>
     </header>
     <main>
