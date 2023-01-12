@@ -668,12 +668,12 @@ textarea {
 }
 
 header {
+  position: relative;
   background-color: var(--color-white);
   border-bottom: 1px solid var(--border-color);
 }
 
 .nav-main {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -695,9 +695,10 @@ header {
 }
 
 .mobile-menu__button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  right: 15px;
   margin: 0;
   padding: 0;
   border: none;
@@ -718,8 +719,9 @@ header {
 
 .mobile-menu__container {
   position: absolute;
+  z-index: 1;
   opacity: 0;
-  top: 100%;
+  top: 0;
   left: 0;
   width: 100%;
   background-color: #ff0;
