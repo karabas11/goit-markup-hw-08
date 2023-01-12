@@ -23,6 +23,15 @@
     padding: 0;
     border: none;
     background-color: transparent;
+
+    &:hover,
+    &:focus {
+      fill: var(--font-color-on);
+    }
+  }
+
+  .mobile-menu__icon-x {
+    fill: var(--font-color-title);
   }
 
   .mobile-menu__button .mobile-menu__icon-x {
@@ -44,6 +53,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 100vh;
 
     background-color: #ff0;
     padding: 20px;
