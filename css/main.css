@@ -822,6 +822,12 @@ header {
     display: flex;
     margin-left: 93px;
   }
+  .mobile-menu__button {
+    display: none;
+  }
+  .mobile-menu__container {
+    display: none;
+  }
 }
 /* .nav-list .item:not(:last-child) {
     margin-right: 50px;
