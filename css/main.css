@@ -677,12 +677,12 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 60px;
 }
 
@@ -695,33 +695,12 @@ header {
 }
 
 .mobile-menu__button {
-  position: absolute;
-  z-index: 2;
-  top: 10px;
-  right: 15px;
-  margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
 }
 .mobile-menu__button:hover, .mobile-menu__button:focus {
   fill: var(--font-color-on);
-}
-
-.mobile-menu__icon-x {
-  fill: var(--font-color-title);
-}
-
-.mobile-menu__button .mobile-menu__icon-x {
-  display: none;
-}
-
-.mobile-menu__button.is-open .mobile-menu__icon-x {
-  display: block;
-}
-
-.mobile-menu__button.is-open .mobile-menu__icon--menu {
-  display: none;
 }
 
 .mobile-menu__container {
