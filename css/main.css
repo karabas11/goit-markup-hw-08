@@ -490,11 +490,11 @@ textarea {
 
 .button--success {
   display: inline-block;
-  min-width: 216px;
+  min-width: 200px;
   border-radius: 4px;
   border: solid 1px;
   margin-top: 30px;
-  padding: 10px 32px;
+  padding: 10px 24px;
   background-color: var(--font-color-on);
   border-color: var(--font-color-on);
   font-weight: 700;
@@ -512,6 +512,12 @@ textarea {
 .button--success:hover, .button--success:focus {
   background-color: var(--font-color-on-button);
   /* outline: none; */
+}
+@media screen and (min-width: 1200px) {
+  .button--success {
+    min-width: 216px;
+    padding: 10px 32px;
+  }
 }
 
 .button--send {
@@ -814,7 +820,6 @@ header {
 
 @media screen and (min-width: 768px) {
   .nav-main {
-    position: static;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
@@ -933,12 +938,12 @@ header {
 }
 section.hero {
   display: block;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
@@ -949,19 +954,38 @@ section.hero {
 }
 
 .hero__title {
-  width: 696px;
+  width: 360px;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: auto;
   margin-left: auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--color-white);
 }
 
+@media screen and (min-width: 768px) {
+  section.hero {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.hero {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 section.advantage {
   padding-top: 94px;
   padding-bottom: 94px;
