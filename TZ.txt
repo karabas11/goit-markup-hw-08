@@ -66,9 +66,17 @@ mobile-x
 @media screen and (min-width: 1200px) {
 }
 
-<div class="mobile-menu__container" id="mobile-menu__container"> -->
-<button type="button" class="mobile-menu__button js-menu-container">
-<svg width="40" height="40" aria-expanded="false" aria-label="Закрити мобільне меню" aria-controls="mobile-menu__container">
-<use class="mobile-menu__icon-x js-close-menu" href="./img/sprite.svg#mobile-x"></use>
-</svg>
-</button>
+:root {
+  --font-color-man: #757575;
+  --font-color-title: #212121;
+  --font-color-on: #2196f3;
+  --font-color-on-button: #188CE8;
+  --border-color: #ececec;
+  --color-white: #ffffff;
+  --font-color-black: #000000;
+  --fon-footer: #2f303a;
+  --backup-hero: #c4c4c4;
+  --color-grey: #f5f4fa;
+  --color-icon: #afb1b8;
+}
+
