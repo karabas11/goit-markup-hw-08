@@ -842,21 +842,63 @@ header {
   .nav-list .nav-list__item + .nav-list__item {
     margin-left: 50px;
   }
-  /* .nav-list .item:not(:last-child) {
-      margin-right: 50px;
-  } */
   .nav-contacts {
     display: block;
     margin-left: auto;
-    /* align-items: center; */
-    /* justify-content: center; */
   }
-  .nav-contacts .nav-contacts__item:not(:last-child) {
-    margin-right: 30px;
+  .nav-list__link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--font-color-title);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  /* .address-nav .item {
-    align-items: center;
-  } */
+  .nav-list__link:focus, .nav-list__link:hover {
+    color: var(--font-color-on);
+  }
+  .nav-contacts {
+    padding-left: 90px;
+  }
+  .nav-contacts__link {
+    display: block;
+    padding-top: 10px;
+    color: var(--fo4nt-color-man);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-contacts__link:focus, .nav-contacts__link:hover {
+    color: var(--font-color-on);
+  }
+  .nav-contacts__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: var(--font-color-man);
+    padding-left: 10px;
+  }
+  .nav-contacts__icon-envelope {
+    fill: currentColor;
+    width: 14px;
+    height: 10px;
+    margin-right: 10px;
+  }
+  .nav-contacts__icon-smartphone {
+    fill: currentColor;
+    width: 10px;
+    height: 14px;
+    margin-right: 10px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .nav-list {
@@ -867,13 +909,28 @@ header {
     display: -ms-flexbox;
     display: flex;
   }
+  .nav-contacts .nav-contacts__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .nav-contacts {
+    padding-left: 300px;
+  }
+  .nav-contacts__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
+    font-size: 14px;
+  }
+  .nav-contacts__icon-envelope {
+    width: 16px;
+    height: 12px;
+  }
+  .nav-contacts__icon-smartphone {
+    width: 10px;
+    height: 16px;
+  }
 }
-/* .address-nav .item {
-  align-items: center;
-} */
-/* .address-nav .item + .item {
-  margin-left: 50px;
-} */
 section.hero {
   display: block;
   max-width: 1600px;
