@@ -80,3 +80,27 @@ mobile-x
   --color-icon: #afb1b8;
 }
 
+<picture>
+        <source srcset="./img/me.webp 1x, ./img/me@2x.webp 2x"
+            media="(min-width:1200px )"
+            type="image/webp"
+         />
+        <source srcset="./img/me.jpg 1x, ./img/me@2x.jpg 2x"
+            media="(min-width:1200px )"
+         />
+        <source srcset="./img/me-tablet.webp 1x, ./img/me@2x-tablet.webp 2x"
+            media="(min-width:768px )"
+            type="image/webp"
+         />
+        <source srcset="./img/me-tablet.jpg 1x, ./img/me@2x-tablet.jpg 2x"
+            media="(min-width:768px )"
+         />
+        <source srcset="./img/me-phone.webp 1x, ./img/me@2x-phone.webp 2x"
+            media="(max-width:767px )"
+            type="image/webp"
+         />
+        <source srcset="./img/me-phone.jpg 1x, ./img/me@2x-phone.jpg 2x"
+            media="(max-width:767px )"
+         />
+        <img class="team-card__image" src="./img/me-phone.jpg" alt="Фото Михайло Єрмаков" />
+       </picture>
