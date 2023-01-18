@@ -7,7 +7,12 @@ footer {
 
 .container--footer {
   display: block;
+  text-align: center;
   // align-items: baseline;
+}
+
+.logo--footer {
+  color: var(--color-white);
 }
 
 .footer-address {
