@@ -1152,8 +1152,6 @@ section.advantage {
 @media screen and (min-width: 1200px) {
   section.fiches {
     display: block;
-  }
-  section.fiches {
     padding-top: 0;
     padding-bottom: 94px;
     background-color: var(--color-white);
