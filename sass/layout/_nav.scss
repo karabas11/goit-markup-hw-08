@@ -29,7 +29,7 @@
 
 .mobile-menu__container {
 	position: absolute;
-  z-index: 2;
+	z-index: 2;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -64,6 +64,7 @@
 
 .mobile-menu__button-open.is-open + .mobile-menu__container {
 	opacity: 1;
+	pointer-events: auto;
 }
 
 .mobile-menu__item {

@@ -1,58 +1,54 @@
 .subscribe-form {
-  display: block;
-  // align-items: center;
-  // justify-content: flex-end;
+	display: block;
 }
 
 .subscribe-form__wraper {
-  display: block;
-  // flex-direction: column;
-  // margin-left: 93px;
+	display: block;
 }
 
 .subscribe-form__input {
-  width: 450px;
-  height: 50px;
-  margin-top: 20px;
+	width: 450px;
+	height: 50px;
+	margin-top: 20px;
 
-  padding-left: 20px;
+	padding-left: 20px;
 
-  background-color: var(--fon-footer);
+	background-color: var(--fon-footer);
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
 
-  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+	/* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
 
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
+	font-size: 16px;
+	line-height: 1.25;
+	color: rgba(255, 255, 255, 0.6);
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  cursor: pointer;
+	cursor: pointer;
 
-    &:focus {
-      outline: none;
-      border: 1px solid var(--font-color-on);
-    }
+	&:focus {
+		outline: none;
+		border: 1px solid var(--font-color-on);
+	}
 }
 
 @media screen and (min-width: 1200px) {
-.subscribe-form {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
+	.subscribe-form {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
 
-.subscribe-form__wraper {
-  display: flex;
-  flex-direction: column;
-  margin-left: 93px;
-}
-.subscribe-form__input {
-  width: 358px;
-  margin-top: 0px;
-}
-
+	.subscribe-form__wraper {
+		display: flex;
+		flex-direction: column;
+		margin-left: 93px;
+	}
+	.subscribe-form__input {
+		width: 358px;
+		margin-top: 0px;
+		margin-right: 12px;
+	}
 }
