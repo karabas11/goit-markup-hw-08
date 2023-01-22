@@ -19,6 +19,8 @@
 	line-height: 0;
 	fill: var(--font-color-black);
 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 	cursor: pointer;
 
 	&:hover,
@@ -28,7 +30,7 @@
 }
 
 .mobile-menu__container {
-	position: absolute;
+	position: fixed;
 	z-index: 2;
 	top: 0;
 	left: 0;
@@ -54,6 +56,8 @@
 	line-height: 0;
 	fill: var(--font-color-title);
 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 	cursor: pointer;
 
 	&:hover,
@@ -77,6 +81,8 @@
 	letter-spacing: 0.02em;
 	color: var(--font-color-title);
 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 	&:hover,
 	&:focus {
 		color: var(--font-color-on);
@@ -97,6 +103,8 @@
 	letter-spacing: 0.02em;
 	color: var(--font-color-on);
 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
 	&:hover,
 	&:focus {
 		color: var(--font-color-on);
@@ -108,8 +116,9 @@
 	font-weight: 500;
 	font-size: 24px;
 	letter-spacing: 0.02em;
-
 	color: var(--font-color-man);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 	&:hover,
 	&:focus {
@@ -138,6 +147,8 @@
 	font-size: 18px;
 	letter-spacing: 0.02em;
 	color: var(--font-color-on);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 	&:hover,
 	&:focus {
@@ -249,10 +260,8 @@
 
 	.nav-contacts {
 		display: flex;
-  justify-content: baseline;
-  // align-items: baseline;
-  //  padding-top: 32px;
-  //  padding-bottom: 32px;
+    // justify-content: center;
+    align-items: center;
 
 		& .nav-contacts__item:not(:last-child) {
 			margin-right: 30px;

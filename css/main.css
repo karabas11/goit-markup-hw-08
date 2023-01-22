@@ -761,6 +761,8 @@ header {
   background-color: transparent;
   line-height: 0;
   fill: var(--font-color-black);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .mobile-menu__button-open:hover, .mobile-menu__button-open:focus {
@@ -768,7 +770,7 @@ header {
 }
 
 .mobile-menu__container {
-  position: absolute;
+  position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
@@ -794,6 +796,8 @@ header {
   background-color: transparent;
   line-height: 0;
   fill: var(--font-color-title);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .mobile-menu__button-close:hover, .mobile-menu__button-close:focus {
@@ -814,6 +818,8 @@ header {
   font-size: 40px;
   letter-spacing: 0.02em;
   color: var(--font-color-title);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
   color: var(--font-color-on);
@@ -832,6 +838,8 @@ header {
   font-size: 34px;
   letter-spacing: 0.02em;
   color: var(--font-color-on);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu__contacts-phone:hover, .mobile-menu__contacts-phone:focus {
   color: var(--font-color-on);
@@ -843,6 +851,8 @@ header {
   font-size: 24px;
   letter-spacing: 0.02em;
   color: var(--font-color-man);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu__contacts-e-mail:hover, .mobile-menu__contacts-e-mail:focus {
   color: var(--font-color-man);
@@ -873,6 +883,8 @@ header {
   font-size: 18px;
   letter-spacing: 0.02em;
   color: var(--font-color-on);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu__social-list-link:hover, .mobile-menu__social-list-link:focus {
   color: var(--font-color-on);
@@ -973,9 +985,9 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: baseline;
-        -ms-flex-pack: baseline;
-            justify-content: baseline;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .nav-contacts .nav-contacts__item:not(:last-child) {
     margin-right: 30px;
