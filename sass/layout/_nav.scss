@@ -249,6 +249,10 @@
 
 	.nav-contacts {
 		display: flex;
+  justify-content: baseline;
+  // align-items: baseline;
+  //  padding-top: 32px;
+  //  padding-bottom: 32px;
 
 		& .nav-contacts__item:not(:last-child) {
 			margin-right: 30px;

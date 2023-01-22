@@ -973,6 +973,9 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
   }
   .nav-contacts .nav-contacts__item:not(:last-child) {
     margin-right: 30px;
@@ -1085,6 +1088,7 @@ section.advantage {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.15;
+  text-align: center;
   text-transform: uppercase;
   color: var(--font-color-title);
 }
@@ -1117,6 +1121,9 @@ section.advantage {
     display: grid;
     grid-template-columns: 354px 354px;
     gap: 30px;
+  }
+  .advantage__title {
+    text-align: left;
   }
   .advantage__img {
     width: 354px;
