@@ -55,8 +55,6 @@
 				<button type="button" class="mobile-menu__button-open js-menu-container">
 					<svg
 						aria-label="Виклик мобільного меню"
-						aria-expanded="false"
-						aria-controls="mobile-menu__container"
 						width="40"
 						height="40"
 					>
@@ -66,11 +64,9 @@
 				<div class="mobile-menu mobile-menu__container" id="mobile-menu__container">
 					<button type="button" class="mobile-menu__button-close js-menu-container">
 						<svg
+            	aria-label="Закрити мобільне меню"
 							width="40"
-							height="40"
-							aria-expanded="false"
-							aria-label="Закрити мобільне меню"
-							aria-controls="mobile-menu__container"
+							height="40"						
 						>
 							<use class="mobile-menu__icon-x js-close-menu" href="./img/sprite.svg#mobile-x"></use>
 						</svg>
@@ -581,9 +577,8 @@
 						name="comment"
 						id="coment"
 						placeholder="Введіть текст"
-						optional
 					></textarea>
-					<label class="check__name" name="user-check" for="check"
+					<label class="check__name" for="check"
 						><input class="form__check-button" value="rules-on" type="checkbox" id="check" required /><span
 							class="form__check-berd"
 						></span>

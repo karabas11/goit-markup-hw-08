@@ -13,21 +13,18 @@
 	}
 }
 
-// .card-portfolio {
-// 	// display: block;
-// 	// width: 370px;
-// }
-
-.card-portfolio__link {
-	// display: block;
-	position: relative;
-
-	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.card-portfolio {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 	&:hover,
 	&:focus {
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	}
+}
+
+.card-portfolio__link {
+	// display: block;
+	position: relative;
 }
 
 .card-portfolio__img-example {
