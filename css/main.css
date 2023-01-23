@@ -1395,18 +1395,6 @@ section.regular-clients {
     height: 92px;
   }
 }
-section.portfolio {
-  background-color: var(--color-white);
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  section.portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
 footer {
   background-color: var(--fon-footer);
   height: 603px;
