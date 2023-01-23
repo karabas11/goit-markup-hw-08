@@ -52,21 +52,21 @@
 						</a>
 					</li>
 				</ul>
-				<button type="button" class="mobile-menu__button-open js-menu-container">
+				<button type="button" class="mobile-menu__button-open js-open-menu js-menu-container">
 					<svg
 						aria-label="Виклик мобільного меню"
 						width="40"
 						height="40"
 					>
-						<use class="mobile-menu__icon--menu js-open-menu" href="./img/sprite.svg#mobile-menu"></use>
+						<use class="mobile-menu__icon--menu" href="./img/sprite.svg#mobile-menu"></use>
 					</svg>
 				</button>
-				<div class="mobile-menu mobile-menu__container" id="mobile-menu__container">
-					<button type="button" class="mobile-menu__button-close js-menu-container">
+				<div class="mobile-menu mobile-menu__container" id="mobile-menu__container js-menu-container">
+					<button type="button" class="mobile-menu__button-close js-close-menu">
 						<svg
+            	aria-label="Закрити мобільне меню"
 							width="40"
-							height="40"
-							aria-label="Закрити мобільне меню"
+							height="40"						
 						>
 							<use class="mobile-menu__icon-x js-close-menu" href="./img/sprite.svg#mobile-x"></use>
 						</svg>
@@ -76,7 +76,7 @@
 							<a class="mobile-menu__link" href="./index.html">Студія</a>
 						</li>
 						<li class="mobile-menu__item">
-							<a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+							<a class="mobile-menu__link current" href="./portfolio.html">Портфоліо</a>
 						</li>
 						<li class="mobile-menu__item">
 							<a class="mobile-menu__link" href="#contacts">Контакти</a>

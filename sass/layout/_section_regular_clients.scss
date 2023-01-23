@@ -17,12 +17,12 @@ section.regular-clients {
 
 .regular-clients__list {
 	display: grid;
-	grid-template-columns: 210px 210px;
+	grid-template-columns: 1fr 1fr;
 	gap: 30px;
 }
 
 .regular-clients__item {
-	width: 210px;
+	max-width: 210px;
 	height: 92px;
 }
 

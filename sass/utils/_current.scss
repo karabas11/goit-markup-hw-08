@@ -1,3 +1,8 @@
+.mobile-menu__link.current {
+  color: var(--font-color-on);
+}
+
+@media screen and (min-width: 768px) {
 .nav-list__link.current {
   color: var(--font-color-on);
 }
@@ -15,4 +20,5 @@
   bottom: 0;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
