@@ -14,7 +14,7 @@
 }
 
 .card-portfolio {
-  display: grid;
+	display: grid;
 	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 	&:hover,
@@ -26,9 +26,8 @@
 .card-portfolio__link {
 	// display: block;
 	position: relative;
-  display: grid;
-  grid-template-rows: 294px;
-
+	display: grid;
+	grid-template-rows: 294px;
 }
 
 .card-portfolio__img-example {
