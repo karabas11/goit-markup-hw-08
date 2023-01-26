@@ -43,12 +43,22 @@ vendors/ — стили, миксины и прочее от третьих ст
 main.scss — выходной файл, в котором объединяются все стили.
 В каждом каталоге должен быть файл .scss, объединяющий все остальные файлы из этого каталога - он может называться _module.scss или _glob.scss, например. И на каждый из этих файлов должна быть ссылка в основном файле main.scss:
 
-							<picture>
-								<source srcset="./img/or-desktop.webp 1x, ./img/or@2x-desktop.webp 2x" media="(min-width:1200px )" type="image/webp" />
-								<source srcset="./img/or-desktop.jpg 1x, ./img/or@2x-desktop.jpg 2x" media="(min-width:1200px )" />
-								<source srcset="./img/or-tablet.webp 1x, ./img/or@2x-tablet.webp 2x" media="(min-width:768px )" type="image/webp"/>
-								<source srcset="./img/or-tablet.jpg 1x, ./img/or@2x-tablet.jpg 2x" media="(min-width:768px )" />
-								<source srcset="./img/or-phone.webp 1x, ./img/or@2x-phone.webp 2x" media="(max-width:767px )" type="image/webp"/>
-								<source srcset="./img/or-phone.jpg 1x, ./img/or@2x-phone.jpg 2x" media="(max-width:767px )" />
-								<img class="command-card__img-name" src="./img/or-phone.jpg" alt="Ольга Рєпіна" />
-							</picture>
+<picture>
+	<source srcset="./img/or-desktop.webp 1x, ./img/or@2x-desktop.webp 2x" media="(min-width:1200px )" type="image/webp" />
+	<source srcset="./img/or-desktop.jpg 1x, ./img/or@2x-desktop.jpg 2x" media="(min-width:1200px )" />
+	<source srcset="./img/or-tablet.webp 1x, ./img/or@2x-tablet.webp 2x" media="(min-width:768px )" type="image/webp"/>
+	<source srcset="./img/or-tablet.jpg 1x, ./img/or@2x-tablet.jpg 2x" media="(min-width:768px )" />
+	<source srcset="./img/or-phone.webp 1x, ./img/or@2x-phone.webp 2x" media="(max-width:767px )" type="image/webp"/>
+	<source srcset="./img/or-phone.jpg 1x, ./img/or@2x-phone.jpg 2x" media="(max-width:767px )" />
+	<img class="command-card__img-name" src="./img/or-phone.jpg" alt="Ольга Рєпіна" />
+</picture>
+
+<picture>
+  <source srcset="./images/photo-desk1x.webp 1x, ./images/photo-desk2x.webp 2x" media="(min-width:1200px)" type="image/webp"/>
+  <source srcset="./images/photo-desk1x.jpg 1x, ./images/photo-desk2x.jpg 2x" media="(min-width:1200px)" type="image/jpeg"/>
+  <source srcset="./images/photo-tab1x.webp 1x, ./images/photo-tab2x.webp 2x" media="(min-width:768px)" type="image/webp"/>
+  <source srcset="./images/photo-tab1x.jpg 1x, ./images/photo-tab2x.jpg 2x" media="(min-width:768px)" type="image/jpeg"/>
+  <source srcset="./images/photo-mob1x.webp 1x, ./images/photo-mob2x.webp 2x" media="(max-width:767px)" type="image/webp"/>
+  <source srcset="./images/photo-mob1x.jpg 1x, ./images/photo-mob2x.jpg 2x" media="(max-width:767px)" type="image/jpeg"/>
+  <img src="./images/photo-mob1x.jpg" alt="team member" />
+</picture>
