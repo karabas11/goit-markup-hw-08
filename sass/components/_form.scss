@@ -79,6 +79,14 @@ textarea {
 	cursor: pointer;
 }
 
+.form__check-button {
+	margin-top: 16px;
+	margin-right: 7px;
+
+	cursor: pointer;
+	appearance: none;
+}
+
 .form__link-check {
 	color: var(--font-color-on);
 	text-decoration: underline;
@@ -86,7 +94,7 @@ textarea {
 
 .form__check-berd {
 	display: inline-block;
-	width: 16px;
+	min-width: 16px;
 	height: 15px;
 	margin-right: 9px;
 	border: 2px solid var(--font-color-black);
@@ -103,14 +111,6 @@ textarea {
 	.form__check-button:focus + & {
 		border-color: var(--font-color-on);
 	}
-}
-
-.form__check-button {
-	margin-top: 16px;
-	margin-right: 7px;
-
-	cursor: pointer;
-	appearance: none;
 }
 
 @media screen and (min-width: 1200px) {
