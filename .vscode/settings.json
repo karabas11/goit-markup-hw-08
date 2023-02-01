@@ -1,26 +1,31 @@
 {
-    "prettier.arrowParens": "avoid",
-    "prettier.bracketSameLine": false,
-    "prettier.printWidth": 120,
-    "prettier.proseWrap": "never",
-    "prettier.trailingComma": "all",
-    "prettier.useTabs": true,
-    "editor.tabSize": 2,
-    "liveSassCompile.settings.formats": [
-        {
-          "format": "expanded",
-          "extensionName": ".css",
-          "savePath": "/css"
-        },
-        {
-          "format": "compressed",
-          "extensionName": ".min.css",
-          "savePath": "/css"
-        }
-      ],
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "editor.formatOnPaste": false, // required
+  "editor.formatOnType": false, // required
+  "editor.formatOnSave": true, // optional
+  // "editor.formatOnSaveMode": "file", // required to format on save
+  // "files.autoSave": "onFocusChange", // optional but recommended
+  "prettier.arrowParens": "avoid",
+  "prettier.bracketSameLine": false,
+  "prettier.printWidth": 120,
+  "prettier.proseWrap": "never",
+  "prettier.trailingComma": "all",
+  "prettier.useTabs": true,
+  "editor.tabSize": 2,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css"
+    }
+  ],
 
-    "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
-    "liveSassCompile.settings.generateMap": true,
-    "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
-    
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
 }
